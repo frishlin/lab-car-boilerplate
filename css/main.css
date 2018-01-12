@@ -1,1 +1,191 @@
-/* Los estilos de tu proyecto */
+body{
+  margin: 0;
+  padding-top: 50px;
+  color: white;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+.logo{
+  margin-top: 9px;
+}
+
+div.background{
+  height: 750px;
+}
+
+.background-one{
+  margin-bottom: 0px;
+  background-image: url("../assets/images/taxi.jpg");
+  background-position: 0% 91.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row-padding{
+  padding-top: 200px;
+}
+
+.logo-blanco{
+  width: 70px;
+}
+
+.jumbotron{
+  background-color: #F7B617;
+  color: white;
+}
+
+.container .jumbotron, .container-fluid .jumbotron{
+  border-radius: 0px;
+}
+
+p, h2, h4{
+  margin-top: 0;
+}
+
+hr.hr-right{
+  float: left;
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 90px;
+}
+
+.o-bien{
+  float: left;
+  margin-left: 30px;
+}
+
+hr.hr-left{
+  width: 100px;
+}
+
+.letras-iphone{
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-bottom: 193px;
+  color: white;
+}
+
+.padding-cont-cel{
+  padding-bottom: 30px;
+}
+
+.quitar-borde-cel{
+  border: 1px solid white;
+  border-right: none;
+  border-left: none;
+}
+
+.quitar-borde-letras-cel{
+  border: 1px solid white;
+  border-left: none;
+}
+
+.background-orange{
+  background-color: #F7B617;
+}
+
+.padding-orange-cel{
+  padding-top: 30px;
+}
+
+.iphone{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 100px;
+}
+
+div.background-2{
+  height: 450px;
+}
+
+.background-two{
+  margin-bottom: 0px;
+  background-image: url("../assets/images/conduce.jpg");
+  background-position: 0% 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron-2{
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 244px;
+}
+
+.btn-cuadro-negro{
+  background-color: #F7B617;
+}
+
+.content-cuadro-negro{
+  background-color:rgba(0,0,0,0.3);
+}
+
+.padding-tarifas{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.letras-formulario{
+  color: white;
+}
+
+p.letras-formulario{
+  padding-top: 30px;
+}
+
+form{
+  padding-top: 20px;
+}
+
+.img-form{
+  padding-top: 27px;
+}
+
+.form-control{
+  border-radius: 9px;
+  border: 1px solid white;
+  background-color:#F7B617;
+}
+
+.padding-iconos{
+  padding-top: 210px;
+}
+
+.logo-app-apple{
+  padding-top: 85px;
+}
+.padding-footer{
+  padding-top: 40px;
+}
+
+background-footer{
+  background-color: red;
+}
+
+.logo-app-google-play{
+  padding-top: 20px;
+}
+
+
+::placeholder{
+  color: red;
+
+/* ::-webkit-input-placeholder
+   color: #4679BD;
+} */
+
+
+.img-mapa{
+  padding-bottom: 30px;
+}
+
+.background-3{
+  padding-bottom: 35px;
+}
+
+.boton-form{
+  border-radius: 6px;
+}
