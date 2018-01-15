@@ -1,222 +1,270 @@
 <!DOCTYPE html>
-
 <html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Lab-ar</title>
+    <title></title>
   </head>
   <body>
-
+<!-- Contenedor general -->
     <div class="container-fluid">
-      <div class="row navbar navbar-default navbar-fixed-top" role="navigation"> <!-- contenedor nav -->
-          <div class="navbar-header col-md-4 col-sm-5 col-lg-8"> <!-- logo -->
-            <a href="#">
-              <img class="col-md-offset-2 logo" src="assets/images/logoForma.png" alt="logo">
-            </a>
-
-            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse"> <!-- botón menú hamburguesa -->
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+      <!-- NAVEGACIÓN -->
+      <div class="row navbar navbar-default navbar-fixed-top" role= "navigator"> <!--contenedor nav-->
+        <div class="col-lg-8 navbar-header"> <!--contenedor logo-->
+          <a href="#"> <!--logo-->
+            <img class="col-lg-offset-1 col-lg-3 logo" src="assets/images/logoForma.png" alt="logo">
+          </a>
+<!-- botón hamburguesa -->
+          <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse"> <!-- botón menú hamburguesa -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<!-- menú opciones -->
+        </div>
+        <div class="col-lg-12 navbar-header navbar-collapse collapse"> <!-- barra de menú de opciones -->
+          <div class="menu">
+            <ul class="nav navbar-nav color-nav"> <!-- menú de opciones-->
+              <li class="col-lg3">
+                <a href="#">Viaje</a>
+              </li>
+              <li class="col-lg4">
+                <a href="#">Conduce</a>
+              </li>
+              <li class="col-lg5">
+                <a href="#">Inicia sesión</a>
+              </li>
+            </ul>
           </div>
-          <div class="navbar-header col-md-8 col-sm-6 col-lg-5 navbar-collapse collapse"> <!-- contenedor menu -->
-            <div class="menu">
-              <ul class="nav navbar-nav">
-                <li class="col-md-offset-1 col-md-2">
-                  <a href="#">Viaja</a>
-                </li>
-                <li class="col-md-2">
-                  <a href="#">Conduce</a>
-                </li>
-                <li class="col-md-offset-1 col-md-6">
-                  <a href="#">Inicia sesión</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-      </div>
-    </div>
-
-    <div class="container-fluid background background-one">
-      <div class="row row-padding "> <!-- fila con padding -->
-      </div>
-      <div class="row"> <!-- contenedor filas cuadro naranja Letras grandes-->
-        <p class="col-lg-7"></p>
-        <div class="col-lg-5 jumbotron">
-          <h2>Disfruta del viaje</h2>
-          <h2>Eres el dueño de tu tiempo</h2>
-          <h4>
-            <span>Viaja con</span> <img class="logo-blanco" src="assets/images/logoBlanco.png" alt="logo-blanco">
-          </h4>
-          <p><a class="btn btn-default btn-md" href="#" role="button">REGÍSTRATE</a></p>
-          <hr class="hr-right"><span class="o-bien">O bien</span>
-          <hr class="hr-left">
-          <p><a class="btn btn-default btn-md" href="#" role="button">Conviértete en un conductor</a></p>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row"> <!-- fila con padding -->
-        <div class="col-lg-12 background-orange padding-orange-cel"> <!--fondo naranja -->
-          <div class="row">
-            <div class="col-lg-11 padding-cont-cel"> <!-- contenedor de imagen y el texto del celular -->
-              <div class="row">
-                <div class="col-lg-5 quitar-borde-cel"> <!-- contenedor celular -->
+<!-- SECCIÓN 1 - TAXI -->
+    <div class="container-fluid background-one background-one-resp"> <!-- background taxi -->
+      <div class="row row-padding row-padding-resp"> <!-- espacio para el texto -->
+          <div class="col-lg-offset-7 col-lg-5 content-orange-square"><!-- Contenedor jumbotrón-naranja -->
+            <div class="row">
+              <div class="col-lg-12 jumbotron jumbotron-orange .jumbotron-orange-resp"> <!-- contenido jumbotron-naranja  -->
+                <div class="col-lg-12">
+                  <h2 class="hidden-xs visible-md visible-lg">Disfruta del viaje</h2>
+                  <h2 class="hidden-lg hidden-md visible-xs">Comienza a viajar</h2>
+                </div>
+                <div class="col-lg-12">
+                  <h2 class="hidden-xs visible-md visible-lg">Eres el dueño de tu tiempo</h2>
+                  <h2 class="col-xs-5 hidden-lg hidden-md visible-xs margin-h2-orange-resp">con</h2>
+                  <img class="col-xs-6 hidden-lg hidden-md visible-xs white-logo-resp" src="assets/images/logoBlanco.png" alt="logo-blanco">
+                </div>
+
+                <div class="col-lg-12">
+                  <br/>
+                  <h4 class="col-lg-4 hidden-xs visible-md visible-lg margin-h4-orange">Viaja con</h4>
+                  <img class="col-lg-8 hidden-xs visible-lg visible-md white-logo" src="assets/images/logoBlanco.png" alt="logo-blanco">
+                </div>
+                <div class="col-lg-5">
+                  <br/>
+                  <a class="btn btn-default btn-md btn-registro hidden-xs visible-md visible-lg" href="#" role="button">REGÍSTRATE</a>
+                  <a class="col-xs-4 btn btn-default btn-md btn-registro hidden-lg hidden-md visible-xs" href="#" role="button">Descarga el app</a>
+                </div>
+                <div class="col-lg-12">
+                  <br/>
+                  <div class="col-lg-5 hidden-xs visible-md visible-lg"><hr></div>
+                  <div class="col-lg-2 hidden-xs visible-md visible-lg"><h6>O bien</h6></div>
+                  <div class="col-lg-5 hidden-xs visible-md visible-lg"><hr></div>
+                </div>
+                <div class="col-lg-7">
+                  <br/>
+                  <a class="btn btn-default btn-md btn-registro hidden-xs visible-md visible-lg" href="#" role="button">Conviértete en un conductor</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- SECCIÓN CELULAR -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 background-orange padding-orange-cel"> <!-- contenedor naranja -->
+            <div class="row col-lg-10 border-cel border-cel-resp"> <!-- contenedor naranja borde blanco -->
+              <div class="col-lg-11"> <!-- contenedor celular y texto -->
+                <div class="col-lg-5"> <!-- contenedor celular -->
+                  <h2 class="letter-white text-center hidden-lg hidden-md visible-xs">La nueva app</h2>
                   <img class="iphone" src="assets/images/iPhone6Plus.png" alt="iphone-6-plus">
                 </div>
-                <div class="col-lg-6 letras-iphone quitar-borde-letras-cel"> <!-- contenedor de letras del celular -->
-                  <div class="col-md-offset-1 col-lg-9"> <!-- Contenedor letras celular  -->
-                    <h4>Descarga la nueva app</h4>
-                    <p>
+                <div class="col-lg-6"> <!-- contenedor texto celular -->
+                  <br><br><br><br>
+                  <h2 class="letter-white hidden-xs visible-md visible-lg">Descarga la nueva app</h2>
+                    <h3 class="letter-white hidden-xs visible-md visible-lg">
                       La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.
-                      <p></p>
+                    </h3>
+                    <h3 class="letter-white hidden-xs visible-md visible-lg">
                       Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.
-                    </p>
-                  </div>
+                    </h3>
                 </div>
               </div>
             </div>
+            <h3 class="letter-white hidden-lg hidden-md visible-xs">Llega a tu destino aún más rápido</h3>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container-fluid background-2 background-two">
-      <div class="row">
-        <!-- <div class="col-lg-9"style="background:red">col1</div> -->
-        <div class="col-md-offset-9 col-lg-3 content-cuadro-negro"> <!-- contenedor cuadro negro opaco -->
-          <div class="row content-cuadro-negro">
-            <div class="col-md-offset-1 col-lg-10 jumbotron-2"> <!-- contenedor letras cuadro negro -->
-              <h3>Conduce cuando quieras</h3>
-              <p>LabCar es una opción para alcanzar tus metas financieras</p>
-              <p><a class="btn btn-default btn-md btn-cuadro-negro" href="#" role="button">Conviértete en conductor</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<!-- SECCIÓN DEL FORMULARIO -->
-
-<div class="container-fluid background-3 background-orange">
-  <div class="row">
-    <div class="col-lg-6"> <!-- seccion formulario -->
-      <div class="row">
-        <div class="col-md-offset-1 col-lg-10"> <!-- contenedor formulario -->
-          <h3 class="padding-tarifas letras-formulario">Tarifas</h3>
-          <h4 class="letras-formulario">Consulta las tarifas LabCar aquí
-            <div class="row">
-              <div class="col-lg-1">
-                <img class="img-form" src="assets/images/shape.png" alt="shape">
-
-              </div>
-              <div class="col-lg-8">
-                <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Ingrese su punto de partida">
-                  </div>
-                </form>
-              </div>
-            </div>
-            <p></p>
-            <div class="row">
-              <div class="col-lg-1">
-                <img class="img-form" src="assets/images/shape2.png" alt="">
-              </div>
-              <div class="col-lg-8">
-                <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Ingrese su destino">
-                  </div>
-                </form>
-              </div>
-              <div class="row">
-                <div class="col-md-offset-3 col-lg-2 boton-form">
-                  <p><a class="btn btn-default btn-md" href="#" role="button">¡TRAZAR RUTA!</a></p>
-                </div>
-              </div>
-            </div>
-          </h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6"> <!-- contenedor mapa -->
-      <div class="row">
-        <div class="col-md-offset-2 col-lg-10">
-          <p class="img-mapa col-lg-12"></p>
-          <img class="img-thumbnail" src="assets/images/mapa.jpg" alt="mapa-google">
-      </div>
-    </div>
-  </div>
-
-  <!-- contenedor FOOTER -->
-  <div class="container-fluid background-footer">
-    <div class="row">
-      <footer class="col-lg-12" style="background:#2B2B2B">
-        <div class="padding-footer"></div>
-        <div class="col-md-offset-1 col-lg-10 logo-2-blanco">
-          <img src="assets/images/logoBlanco.png" alt="logo-blanco">
-          <hr>
-        </div>
+<!-- SECCIÓN FONDO 2 -->
+      <div class="container-fluid background-2 background-two">
         <div class="row">
-          <div class="col-md-offset-1 col-lg-10">
-            <div class="col-lg-12" >
-              <div class="col-lg-3">
-                <i class="padding-iconos fa fa-facebook fa-2xx" aria-hidden="true"></i>
-                <i class="fa fa-twitter fa-2xx" aria-hidden="true"></i>
-                <i class="fa fa-linkedin fa-2xx" aria-hidden="true"></i>
-                <i class="fa fa-apple fa-2xx" aria-hidden="true"></i>
-                <i class="fa fa-play fa-2xx" aria-hidden="true"></i>
+          <div class="col-lg-offset-8 col-lg-4 content-black-sqare">
+            <div class="row content-black-sqare">
+              <div class="col-lg-offset-1 col-lg-10 jumbotron-black">
+                <h3 class="letter-white">Conduce cuando quieras</h3>
+                <h4 class="letter-white">LabCar es una opción para alcanzar tus metas financieras</h4>
+                <br/>
+                <a class="btn btn-default btn-md btn-cuadro-negro" href="#" role="button">Conviértete en conductor</a>
               </div>
-              <div class="col-lg-3">
-                <p>Viaja</p>
-                <p>Conduce</p>
-                <p>Ciudades</p>
-                <p>Ciudades</p>
-                <p>Entregas</p>
-                <p>Cómo funciona?</p>
-                <p>Países</p>
-                <p>Seguridad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- SECCIÓN MAPA -->
+      <div class="container-fluid background-orange-2">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-offset-1 col-lg-10">
+                <br/>
+                <h3 class="padding-rates letter-white">Tarifas</h3>
+                <h4 class=" letter-white">Consulta las tarifas LabCar aquí</h4>
+                <br/>
+                <div class="row">
+                  <div class="col-lg-1 col-xs-3">
+                    <img class="img-form" src="assets/images/shape.png" alt="shape">
+                  </div>
+                  <div class="col-lg-8 col-xs-9">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control hidden-xs visible-md visible-lg" placeholder="Ingrese su punto de partida">
+                        <input type="text" class="form-control hidden-lg hidden-md visible-xs form-resp" placeholder="Ingrese su punto de partida">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <br/>
+                <div class="row">
+                  <div class="col-lg-1 col-xs-3">
+                    <img class="img-form" src="assets/images/shape2.png" alt="shape2">
+                  </div>
+                  <div class="col-lg-8 col-xs-9">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control hidden-xs visible-md visible-lg" placeholder="Ingrese su destino">
+                        <input type="text" class="form-control hidden-lg hidden-md visible-xs form-resp" placeholder="Ingrese su destino">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-offset-3 col-lg-4 botton-form">
+                      <a class="btn btn-default btn-md hidden-xs visible-lg visible-md" href="#" role="button">¡TRAZAR RUTA!</a>
+                      <a class="btn btn-default btn-md hidden-lg hidden-md visible-xs btn-trace-resp" href="#" role="button">¡TRAZAR RUTA!</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-3">
-                <p>Oportunidades</p>
-                <p>Nuestra historia</p>
-                <p>API de LabCar</p>
-                <p>Eventos</p>
-                <p>Desarrolladores</p>
-                <p>Servicios</p>
-                <p>Laboratoria</p>
-                <p>Coders</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="row cont-map">
+              <div class="col-lg-offset-2 col-lg-10">
+                <div class="col-lg-11">
+                  <img class="img-mapa img-thumbnail" src="assets/images/mapa.jpg" alt="mapa-google">
+                </div>
               </div>
-              <div class="col-lg-3">
-                <img class="logo-app-apple" src="assets/images/appstore.png" alt="icono-apple">
-                <img class="logo-app-google-play" src="assets/images/enBadgeWebGeneric.png" alt="icono-google-play">
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- SECCION FOOTER -->
+      <div class="container-fluid background-footer">
+        <div class="row">
+          <footer class="col-lg-12">
+            <div class="padding-footer"></div>
+            <div class="col-lg-offset-1 col-lg-10 logo-2-white">
+                <img src="assets/images/logoBlanco.png" alt="logo-blanco">
+                <hr/>
+            </div>
+
+
+
+            <div class="row visible-xs hidden-lg hidden-md">
+              <div class="col-xs-12">
+                <div class="col-xs-6 letter-white">
+                  <p>Viaja</p>
+                  <p>Conduce</p>
+                  <p>Ciudades</p>
+                  <p>Ciudades</p>
+                  <p>Entregas</p>
+                  <p>Cómo funciona?</p>
+                  <p>Países</p>
+                  <p>Seguridad</p>
+                </div>
+                <div class="col-xs-6 letter-white padding-iconos-resp">
+                  <i class="fa fa-facebook fa-2xx" aria-hidden="true"></i>
+                  <i class="fa fa-twitter fa-2xx" aria-hidden="true"></i>
+                  <i class="fa fa-linkedin fa-2xx" aria-hidden="true"></i>
+                  <i class="fa fa-apple fa-2xx" aria-hidden="true"></i>
+                  <i class="fa fa-play fa-2xx" aria-hidden="true"></i>
+                  <img class="logo-app-apple-resp" src="assets/images/appstore.png" alt="icono-apple">
+                  <img class="logo-app-google-play-resp" src="assets/images/enBadgeWebGeneric.png" alt="icono-google-play">
+                </div>
               </div>
             </div>
 
-          </div>
+            <div class="row hidden-xs visible-lg visible-md">
+              <div class="col-lg-offset-1 col-lg-10">
+                <div class="col-lg-3 letter-white">
+                  <i class="padding-iconos fa fa-facebook fa-2xx" aria-hidden="true"></i>
+                  <i class="fa fa-twitter fa-2xx" aria-hidden="true"></i>
+                  <i class="fa fa-linkedin fa-2xx" aria-hidden="true"></i>
+                  <i class="fa fa-apple fa-2xx" aria-hidden="true"></i>
+                  <i class="fa fa-play fa-2xx" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-3 letter-white">
+                  <p>Viaja</p>
+                  <p>Conduce</p>
+                  <p>Ciudades</p>
+                  <p>Ciudades</p>
+                  <p>Entregas</p>
+                  <p>Cómo funciona?</p>
+                  <p>Países</p>
+                  <p>Seguridad</p>
+                </div>
 
-
+                <div class="col-lg-3 letter-white">
+                  <p>Oportunidades</p>
+                  <p>Nuestra historia</p>
+                  <p>API de LabCar</p>
+                  <p>Eventos</p>
+                  <p>Desarrolladores</p>
+                  <p>Servicios</p>
+                  <p>Laboratoria</p>
+                  <p>Coders</p>
+                </div>
+                <div class="col-lg-3">
+                  <img class="hidden-xs visible-lg visible-md logo-app-apple" src="assets/images/appstore.png" alt="icono-apple">
+                  <img class="hidden-xs visible-lg visible-md logo-app-google-play" src="assets/images/enBadgeWebGeneric.png" alt="icono-google-play">
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-offset-1 col-lg-10">
+                <hr/>
+                <small class="visible-lg visible-md hidden-xs footer-small letter-white">© 2017 LabCar technologies inc.</small>
+                <small class="hidden-lg hidden-md visible-xs footer-small-rep letter-white">© 2017 LabCar technologies inc.</small>
+              </div>
+          </footer>
         </div>
-
-        <div class="col-md-offset-1 col-lg-10">
-          <!-- <img src="assets/images/logoBlanco.png" alt="logo-blanco"> -->
-          <hr>
-          <small>© 2017 LabCar technologies inc.</small>
-      </footer>
-
-    </div>
-  </div>
-
-</div>
-
+      </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
